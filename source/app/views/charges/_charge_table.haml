@@ -1,0 +1,13 @@
+%table.charges
+  %tr
+    %th Name
+    %th Amount
+    %th Created
+  - charges.each do |charge|
+    %tr#charge
+      %td
+        = charge.customer.full_name
+      %td
+        = formatted_amount(charge.amount)
+      %td
+        = charge.created_at

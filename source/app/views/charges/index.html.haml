@@ -1,0 +1,13 @@
+#failed_charges
+  %h1 Failed Charges
+  = render 'charge_table', charges: @failed_charges
+
+#disputed_charges
+  %h1 Disputed Charges
+  = render 'charge_table', charges: @disputed_charges
+
+#successful_charges
+  %h1 Successful Charges
+  = render 'charge_table', charges: @successful_charges
+
+
